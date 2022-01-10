@@ -284,15 +284,19 @@ $name=$_GET["name"];
 $price=$_GET["price"];
 $description=$_GET["description"];
 ?>
-						<div class="col-sm-4">
+						<div class="col-sm-4" style="width:1000px; " height="1000">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center" >
-                                    <a href="Produs.php?image=<?php echo $image; ?>&name=<?php echo $name; ?>&price=<?php echo $price; ?>&description=<?php echo $description; ?>"><img src="<?php echo $image; ?>" alt="" style="width:200px; height:200px"/></a>
-										<p><?php echo $name; ?></p>
-										<h2><?php echo $price; ?></h2>
-                                        <h2><?php echo $description; ?></h2>
+
+                                    	<!--<a href="Produs.php?image=<!?php echo $image; ?>&name=<!?php echo $name; ?>&price=<!?php echo $price; ?>&description=<!?php echo $description; ?>">-->
+										<div class="block"><img class="chenar" src="<?php echo $image; ?>" alt="" style="width:300px; " height="300" align="left"/></div>
+										</a>
+										<h1 class="products" style="text-align:center; width: 962px; color:black; font-family: 'Garamond';" ><b><?php echo $name; ?></b></h1>
+										&nbsp;<h2 style="text-align:center; width: 962px;color:black;">Pret:   <?php echo $price; ?> lei</h2>
 										<a href="Cos.php?image=<?php echo $image; ?>&name=<?php echo $name; ?>&price=<?php echo $price; ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adauga in cos</a>
+                                        <div class="products" style="color:black"><?php echo $description; ?></div>
+										
 									</div>
 								</div>
 							</div>
